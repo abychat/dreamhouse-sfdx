@@ -11,9 +11,10 @@ trigger PushNotificationTrigger on Property__c (after update) {
             Set<String> users = new Set<String>();
             users.add(UserInfo.getUserId());
             msg.send('DreamHouzz', users);
+            //Check Comments
         } 
         
     }
-	*/
+    */
 
 }
